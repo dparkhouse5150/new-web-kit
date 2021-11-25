@@ -1,0 +1,89 @@
+@import "../../global-styles/vars";
+@import "../../global-styles/mixins";
+.container {
+    margin: auto;
+}
+.profile-card {
+    background: $clr-card-bg;
+    display: inline-block;
+    padding: 60px;
+
+    .social-links {
+        @include unstyled-list;
+
+        li {
+            &.facebook {
+                width: 18px;
+                height: 18px;
+                background: url(../../../assets/profile/facebook.png) no-repeat;
+            }
+
+            &.twitter {
+                width: 18px;
+                height: 18px;
+                background: url(../../../assets/profile/twitter.png) no-repeat;
+            }
+
+            &.instagram {
+                width: 20px;
+                height: 18px;
+                background: url(../../../assets/profile/instagram.png) no-repeat;
+            }
+        }
+    }
+
+    .profile-card-footer {
+        .secondary {
+            ul {
+                @include unstyled-list;
+            }
+        }
+    }
+
+    .icons {
+        float: left;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+
+        float: left;
+
+        .friend-request-icon {
+
+        }
+
+        .email-icon {
+
+        }
+    }
+
+    .meta {
+
+    }
+
+    .social-links {
+
+    }
+
+
+    .desc {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .profile-header-footer {
+        text-align: center;
+
+        .secondary {
+            ul {
+                @include unstyled-list;
+            }
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
